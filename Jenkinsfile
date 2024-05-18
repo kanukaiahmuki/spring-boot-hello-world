@@ -41,8 +41,8 @@
         }
         stage("Copy"){
           steps {
-            dir("spring-boot-hello-world"){
-              bat ("copy target/*.jar  files")
+           
+           sh "copy target/*.jar  files")
            sh "mkdir file"
            sh  "chmod -r 655 file"    
             }
