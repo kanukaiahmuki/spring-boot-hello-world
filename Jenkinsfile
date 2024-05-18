@@ -41,10 +41,11 @@
         }
         stage("Copy"){
           steps {
+           sh "mkdir file"
+           sh  "chmod -r 655 file"              
            
            sh "copy target/*.jar  files")
-           sh "mkdir file"
-           sh  "chmod -r 655 file"    
+    
             }
           }
         }
