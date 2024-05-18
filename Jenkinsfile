@@ -42,7 +42,10 @@
         stage("Copy"){
           steps {
             dir("spring-boot-hello-world"){
-              bat ("copy target/*.jar C:\Users\user\Desktop")
+              bat ("copy target/*.jar  files")
+           sh
+           mkdir files
+           chmod 666 files     
             }
           }
         }
