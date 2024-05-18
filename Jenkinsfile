@@ -43,9 +43,8 @@
           steps {
             dir("spring-boot-hello-world"){
               bat ("copy target/*.jar  files")
-           sh
-           'mkdir files'
-           'chmod -R 666 files'     
+           sh "mkdir file"
+           sh  "chmod -r 655 file"    
             }
           }
         }
